@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <h1>Your Trash Todo List</h1>
+   <nav>
+       <ul>
+         <li><a href="todo2.html">Home</a></li>
+         <li><a href="done.html">Done</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+
+        <button onclick="hideIt()">hide</button>
+        <div id="myDIV">
+               
+    <ul class = 'todo-list'></ul>
+    Completed fucking list
+    <ul class = 'completed-todo-list'></ul>
+
+   
+           
+    <form>
+        <input type = 'text' class = 'textclass' value = '' id = 'textid' />
+        <input type = 'button' class = 'buttonclass' id = 'buttonid' value = 'click to add' />
+        <input type = 'button' class = 'deleteselectedclass' value = 'clear selected'  />
+        <input type = 'button' class = 'deleteallclass' value = 'clear undone' onclick = tododeleteall() />
+        <input type = 'button' class = 'selectcompleted' value = 'mark as completed' onclick = selectcomplete() />
+        <input type = 'button' class = 'clearcompleted' value ='clear completed' onclick = clearcompleted() />
+        <input type = 'button' class = 'clearall' value ='clear all' onclick = clearall() />
+        <input type = 'button' class = 'save' value ='save' onclick = saveCurrentList() />
+
+    
+    
+    </form>
+
+</div>
+
+
+    <script src ="todo2.js"></script>
+
+</body>
+
+</html>
